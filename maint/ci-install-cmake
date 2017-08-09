@@ -3,6 +3,7 @@
 if [ "$ALIEN_INSTALL_TYPE" == "system" ]; then
 
   echo 'downloading cmake to stand in for system cmake';
+  cpanm HTTP::Tiny
   af download
   mkdir -p ~/opt/cmake3
   mv cmake-*.tar.gz ~/opt/cmake3

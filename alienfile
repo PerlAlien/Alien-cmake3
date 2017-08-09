@@ -3,6 +3,7 @@ use Config;
 use File::Which qw( which );
 use Path::Tiny qw( path );
 use Capture::Tiny qw( capture );
+use File::Spec;
 
 # NOTE: you can set ALIEN_CMAKE_FROM_SOURCE to force a build from source
 # even on platforms which have binary versions of cmake available.  Normally
@@ -88,9 +89,21 @@ share {
       version => qr/([0-9\.]+)/,
     );
     plugin Extract => $binary_format;
-    build [
-      'cp -ar * %{.install.stage}',
-    ];
+    if($^O eq 'MSWin32')
+    {
+      build sub {
+        my($build) = @_;
+        my $stage = File::Spec->catdir($build->install_prop->{stage});
+        path($stage)->mkpath unless -d $stage;
+        $build->system("xcopy . $stage /E");
+      };
+    }
+    else
+    {
+      build [
+        'cp -ar * %{.install.stage}',
+      ];
+    }
   }
   
   # For platforms without a (recent) binary release, build it from source

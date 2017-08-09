@@ -61,7 +61,7 @@ The name of the &lt;cmake> executable.
 
     - [Alien::cmake3](https://metacpan.org/pod/Alien::cmake3) is based on [alienfile](https://metacpan.org/pod/alienfile) and [Alien::Build](https://metacpan.org/pod/Alien::Build) and integrates better with [Alien](https://metacpan.org/pod/Alien)s that are based on that technology.
     - [Alien::cmake3](https://metacpan.org/pod/Alien::cmake3) will provide version 3.0.0 or better.  [Alien::CMake](https://metacpan.org/pod/Alien::CMake) will provide 2.x.x on some platforms where more recent binaries are not available.
-    - [Alien::cmake3](https://metacpan.org/pod/Alien::cmake3) will install on platforms where there is no binary `cmake` provided by cmake.org.  It does this by building `cmake` from source.
+    - [Alien::cmake3](https://metacpan.org/pod/Alien::cmake3) will install on platforms where there is no system `cmake` and no binary `cmake` provided by cmake.org.  It does this by building `cmake` from source.
     - [Alien::cmake3](https://metacpan.org/pod/Alien::cmake3) is preferred in the opinion of the maintainer of both [Alien::cmake3](https://metacpan.org/pod/Alien::cmake3) and [Alien::CMake](https://metacpan.org/pod/Alien::CMake) for these reasons.
 
 # AUTHOR

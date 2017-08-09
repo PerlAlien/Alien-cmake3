@@ -73,7 +73,7 @@ these ways:
 
 =item L<Alien::cmake3> will provide version 3.0.0 or better.  L<Alien::CMake> will provide 2.x.x on some platforms where more recent binaries are not available.
 
-=item L<Alien::cmake3> will install on platforms where there is no binary C<cmake> provided by cmake.org.  It does this by building C<cmake> from source.
+=item L<Alien::cmake3> will install on platforms where there is no system C<cmake> and no binary C<cmake> provided by cmake.org.  It does this by building C<cmake> from source.
 
 =item L<Alien::cmake3> is preferred in the opinion of the maintainer of both L<Alien::cmake3> and L<Alien::CMake> for these reasons.
 

@@ -93,6 +93,8 @@ share {
     {
       build sub {
         my($build) = @_;
+        # This is a rare case where we actually want the borked windows
+        # type paths with backslashes
         my $stage = File::Spec->catdir($build->install_prop->{stage});
         path($stage)->mkpath unless -d $stage;
         $build->system("xcopy . $stage /E");

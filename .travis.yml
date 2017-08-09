@@ -3,6 +3,10 @@ sudo: false
 
 install:
   - perlbrew list
+  - cpanm -n App::af
+  - af missing | cpanm -n
+  - ./maint/ci-install-cmake
+  - af missing | cpanm -n
   - cpanm -n Dist::Zilla
   - dzil authordeps --missing | cpanm -n
   - dzil listdeps   --missing | cpanm -n
@@ -15,6 +19,9 @@ perl:
   - "5.22"
   - "5.24"
   - "5.26"
+
+before_script:
+  - export PATH="$HOME/opt/cmake3/bin:$PATH"
 
 script:
   - dzil test -v

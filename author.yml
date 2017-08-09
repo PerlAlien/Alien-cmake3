@@ -5,10 +5,15 @@ pod_spelling_system:
   # (regardless of what spell check thinks)
   # or stuff that I like to spell incorrectly
   # intentionally
-  stopwords: []
+  stopwords:
+    - cmake
+    - alienized
+    - autoconf
+    - exe
 
 pod_coverage:
   skip: 0
   # format is "Class#method" or "Class",regex allowed
   # for either Class or method.
-  private: []
+  private:
+    - Alien::cmake3#alien_helper

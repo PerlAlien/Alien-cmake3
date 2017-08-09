@@ -4,7 +4,6 @@ sudo: false
 install:
   - perlbrew list
   - cpanm -n App::af
-  - af missing | cpanm -n
   - ./maint/ci-install-cmake
   - af missing | cpanm -n
   - cpanm -n Dist::Zilla

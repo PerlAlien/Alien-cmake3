@@ -4,6 +4,11 @@ use File::Which qw( which );
 use Path::Tiny qw( path );
 use Capture::Tiny qw( capture );
 
+# NOTE: you can set ALIEN_CMAKE_FROM_SOURCE to force a build from source
+# even on platforms which have binary versions of cmake available.  Normally
+# you should only need this for testing the build from source capability of
+# this alienfile.
+
 configure {
   requires 'Alien::Build' => '0.92';
   requires 'File::Which';

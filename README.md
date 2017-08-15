@@ -57,6 +57,10 @@ The name of the &lt;cmake> executable.
 # SEE ALSO
 
 - [Alien::Build::Plugin::Build::CMake](https://metacpan.org/pod/Alien::Build::Plugin::Build::CMake)
+
+    [Alien::Build](https://metacpan.org/pod/Alien::Build) plugin for `cmake`  This will automatically pull in Alien::cmake3 if you
+    need it.
+
 - [Alien::CMake](https://metacpan.org/pod/Alien::CMake)
 
     This is an older distribution that provides an alienized `cmake`.  It is different in

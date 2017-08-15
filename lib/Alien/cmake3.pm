@@ -66,6 +66,9 @@ The name of the <cmake> executable.
 
 =item L<Alien::Build::Plugin::Build::CMake>
 
+L<Alien::Build> plugin for C<cmake>  This will automatically pull in Alien::cmake3 if you
+need it.
+
 =item L<Alien::CMake>
 
 This is an older distribution that provides an alienized C<cmake>.  It is different in

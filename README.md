@@ -17,12 +17,14 @@ From [alienfile](https://metacpan.org/pod/alienfile)
     use alienfile;
     
     share {
-      requires Alien::cmake3;
+      # Build::CMake plugin pulls in Alien::cmake3 automatically
+      plugin 'Build::CMake';
       build [
-        '%{cmake3} ...'
+        # this is the default build step, if you do not specify one.
+        [ '%{cmake}', -G => '%{cmake_generator}', '-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true', '-DCMAKE_INSTALL_PREFIX:PATH=%{.install.prefix}', '.' ],
         '%{make}',
         '%{make} install',
-      ],
+      ];
     };
 
 # DESCRIPTION

@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - use bootstral_ssl option on windows
+    cmake3 may be a prereq for Alien::LibreSSL
 
 0.03      2017-08-15 10:33:06 -0400
   - Improve documentation

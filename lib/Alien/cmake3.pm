@@ -15,7 +15,7 @@ From Perl:
  use Alien::cmake3;
  use Env qw( @PATH );
  
- unshift @PATH, Alien::cmake->bin_dir;
+ unshift @PATH, Alien::cmake3->bin_dir;
  system 'cmake', ...;
 
 From L<alienfile>

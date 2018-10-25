@@ -9,7 +9,7 @@ From Perl:
     use Alien::cmake3;
     use Env qw( @PATH );
     
-    unshift @PATH, Alien::cmake->bin_dir;
+    unshift @PATH, Alien::cmake3->bin_dir;
     system 'cmake', ...;
 
 From [alienfile](https://metacpan.org/pod/alienfile)
@@ -84,7 +84,11 @@ The name of the &lt;cmake> executable.
 
 # AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+Author: Graham Ollis <plicease@cpan.org>
+
+Contributors:
+
+Adriano Ferreira (FERREIRA)
 
 # COPYRIGHT AND LICENSE
 

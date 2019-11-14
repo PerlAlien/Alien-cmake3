@@ -76,7 +76,7 @@ these ways:
 
 =over 4
 
-=item L<Alien::cmake3> is based on L<alienfile> and L<Alien::Build> 
+=item L<Alien::cmake3> is based on L<alienfile> and L<Alien::Build>
 
 It integrates better with L<Alien>s that are based on that technology.
 

@@ -66,7 +66,7 @@ The name of the &lt;cmake> executable.
     This is an older distribution that provides an alienized `cmake`.  It is different in
     these ways:
 
-    - [Alien::cmake3](https://metacpan.org/pod/Alien::cmake3) is based on [alienfile](https://metacpan.org/pod/alienfile) and [Alien::Build](https://metacpan.org/pod/Alien::Build) 
+    - [Alien::cmake3](https://metacpan.org/pod/Alien::cmake3) is based on [alienfile](https://metacpan.org/pod/alienfile) and [Alien::Build](https://metacpan.org/pod/Alien::Build)
 
         It integrates better with [Alien](https://metacpan.org/pod/Alien)s that are based on that technology.
 

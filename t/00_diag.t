@@ -23,8 +23,9 @@ $modules{$_} = $_ for qw(
 
 $post_diag = sub {
   use Alien::cmake3;
-  diag "version      = @{[ Alien::cmake3->version           ]}";
-  diag "install_type = @{[ Alien::cmake3->install_type      ]}";
+  diag "version      = @{[ Alien::cmake3->version               ]}";
+  diag "install_type = @{[ Alien::cmake3->install_type          ]}";
+  diag "style        = @{[ Alien::cmake3->runtime_prop->{style} ]}";
 };
 
 my @modules = sort keys %modules;

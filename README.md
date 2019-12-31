@@ -1,4 +1,4 @@
-# Alien::cmake3 [![Build Status](https://secure.travis-ci.org/plicease/Alien-cmake3.png)](http://travis-ci.org/plicease/Alien-cmake3)
+# Alien::cmake3 [![Build Status](https://secure.travis-ci.org/Perl5-Alien/Alien-cmake3.png)](http://travis-ci.org/Perl5-Alien/Alien-cmake3)
 
 Find or download or build cmake 3 or better
 
@@ -6,26 +6,30 @@ Find or download or build cmake 3 or better
 
 From Perl:
 
-    use Alien::cmake3;
-    use Env qw( @PATH );
-    
-    unshift @PATH, Alien::cmake3->bin_dir;
-    system 'cmake', ...;
+```perl
+use Alien::cmake3;
+use Env qw( @PATH );
+
+unshift @PATH, Alien::cmake3->bin_dir;
+system 'cmake', ...;
+```
 
 From [alienfile](https://metacpan.org/pod/alienfile)
 
-    use alienfile;
-    
-    share {
-      # Build::CMake plugin pulls in Alien::cmake3 automatically
-      plugin 'Build::CMake';
-      build [
-        # this is the default build step, if you do not specify one.
-        [ '%{cmake}', -G => '%{cmake_generator}', '-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true', '-DCMAKE_INSTALL_PREFIX:PATH=%{.install.prefix}', '.' ],
-        '%{make}',
-        '%{make} install',
-      ];
-    };
+```perl
+use alienfile;
+
+share {
+  # Build::CMake plugin pulls in Alien::cmake3 automatically
+  plugin 'Build::CMake';
+  build [
+    # this is the default build step, if you do not specify one.
+    [ '%{cmake}', -G => '%{cmake_generator}', '-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true', '-DCMAKE_INSTALL_PREFIX:PATH=%{.install.prefix}', '.' ],
+    '%{make}',
+    '%{make} install',
+  ];
+};
+```
 
 # DESCRIPTION
 
@@ -36,13 +40,17 @@ version 3.0.0 or better.  `cmake` is a popular alternative to autoconf.
 
 ## bin\_dir
 
-    my @dirs = Alien::cmake3->bin_dir;
+```perl
+my @dirs = Alien::cmake3->bin_dir;
+```
 
 List of directories that need to be added to the `PATH` in order for `cmake` to work.
 
 ## exe
 
-    my $exe = Alien::cmake3->exe;
+```perl
+my $exe = Alien::cmake3->exe;
+```
 
 The name of the `cmake` executable.
 
@@ -50,7 +58,9 @@ The name of the `cmake` executable.
 
 ## cmake3
 
-    %{cmake3}
+```
+%{cmake3}
+```
 
 The name of the &lt;cmake> executable.
 

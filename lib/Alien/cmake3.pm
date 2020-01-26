@@ -58,7 +58,7 @@ The name of the C<cmake> executable.
 
  %{cmake3}
 
-The name of the <cmake> executable.
+The name of the C<cmake> executable.
 
 =head1 SEE ALSO
 

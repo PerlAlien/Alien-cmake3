@@ -62,7 +62,7 @@ The name of the `cmake` executable.
 %{cmake3}
 ```
 
-The name of the &lt;cmake> executable.
+The name of the `cmake` executable.
 
 # SEE ALSO
 

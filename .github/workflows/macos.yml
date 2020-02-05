@@ -13,6 +13,7 @@ env:
   PERL_LOCAL_LIB_ROOT: /Users/runner/perl5
   PERL_MB_OPT: --install_base /Users/runner/perl5
   PERL_MM_OPT: INSTALL_BASE=/Users/runner/perl5
+  ALIEN_INSTALL_TYPE: share
 
 jobs:
   perl:

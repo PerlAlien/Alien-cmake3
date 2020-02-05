@@ -24,7 +24,7 @@ share {
   plugin 'Build::CMake';
   build [
     # this is the default build step, if you do not specify one.
-    [ '%{cmake}', -G => '%{cmake_generator}', '-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true', '-DCMAKE_INSTALL_PREFIX:PATH=%{.install.prefix}', '.' ],
+    [ '%{cmake3}', -G => '%{cmake_generator}', '-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true', '-DCMAKE_INSTALL_PREFIX:PATH=%{.install.prefix}', '.' ],
     '%{make}',
     '%{make} install',
   ];

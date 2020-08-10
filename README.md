@@ -1,4 +1,4 @@
-# Alien::cmake3 [![Build Status](https://secure.travis-ci.org/Perl5-Alien/Alien-cmake3.png)](http://travis-ci.org/Perl5-Alien/Alien-cmake3) ![windows](https://github.com/Perl5-Alien/Alien-cmake3/workflows/windows/badge.svg) ![macos](https://github.com/Perl5-Alien/Alien-cmake3/workflows/macos/badge.svg)
+# Alien::cmake3 [![Build Status](https://travis-ci.org/PerlAlien/Alien-cmake3.svg)](http://travis-ci.org/PerlAlien/Alien-cmake3) ![windows](https://github.com/PerlAlien/Alien-cmake3/workflows/windows/badge.svg) ![macos](https://github.com/PerlAlien/Alien-cmake3/workflows/macos/badge.svg)
 
 Find or download or build cmake 3 or better
 

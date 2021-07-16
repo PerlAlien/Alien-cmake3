@@ -17,7 +17,6 @@ jobs:
       fail-fast: false
       matrix:
         cip:
-          - tag: "static"
           - env: ALIEN_INSTALL_TYPE=share
             tag: "5.35"
           - env: ALIEN_INSTALL_TYPE=system

@@ -1,4 +1,4 @@
-# Alien::cmake3 ![linux](https://github.com/PerlAlien/Alien-cmake3/workflows/linux/badge.svg) ![windows](https://github.com/PerlAlien/Alien-cmake3/workflows/windows/badge.svg) ![macos](https://github.com/PerlAlien/Alien-cmake3/workflows/macos/badge.svg)
+# Alien::cmake3 ![static](https://github.com/PerlAlien/Alien-cmake3/workflows/static/badge.svg) ![linux](https://github.com/PerlAlien/Alien-cmake3/workflows/linux/badge.svg) ![windows](https://github.com/PerlAlien/Alien-cmake3/workflows/windows/badge.svg) ![macos](https://github.com/PerlAlien/Alien-cmake3/workflows/macos/badge.svg)
 
 Find or download or build cmake 3 or better
 

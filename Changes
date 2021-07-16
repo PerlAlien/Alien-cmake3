@@ -1,7 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
-  - Update windows zip filename patterns (gh#13, gh#14)
+
+0.07      2021-07-16 11:36:32 -0600
+  - Update Windows zip and Linux tarball filename patterns (gh#13, gh#14)
 
 0.06      2021-05-29 09:35:56 -0600
   - Fixed macOS download link which is of course broken with

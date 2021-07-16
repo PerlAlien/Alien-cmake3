@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Documentation improvements (gh#3, gh#15)
 
 0.07      2021-07-16 11:36:32 -0600
   - Update Windows zip and Linux tarball filename patterns (gh#13, gh#14)

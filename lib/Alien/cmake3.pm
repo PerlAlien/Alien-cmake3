@@ -5,7 +5,7 @@ use warnings;
 use 5.008001;
 use base qw( Alien::Base );
 
-# ABSTRACT: Find or download or build cmake 3 or better
+# ABSTRACT: Find or download or build cmake 3
 # VERSION
 
 =head1 SYNOPSIS
@@ -36,7 +36,7 @@ From L<alienfile>
 =head1 DESCRIPTION
 
 This L<Alien> distribution provides an external dependency on the build tool C<cmake>
-version 3.0.0 or better.  C<cmake> is a popular alternative to autoconf.
+version 3.x.x.  C<cmake> is a popular alternative to autoconf.
 
 =head1 METHODS
 
@@ -80,7 +80,7 @@ these ways:
 
 It integrates better with L<Alien>s that are based on that technology.
 
-=item L<Alien::cmake3> will provide version 3.0.0 or better
+=item L<Alien::cmake3> will provide version 3.x.x
 
 L<Alien::CMake> will provide 2.x.x on some platforms where more recent binaries are not available.
 
@@ -136,7 +136,7 @@ binary share install (even if available), and instead a source share install.
 
 =head1 CAVEATS
 
-If you do not have a system C<cmake> of at least 3.0.0 available, then a share install
+If you do not have a system C<cmake> version 3.x.x available, then a share install
 will be attempted.
 
 Binary share installs are attempted on platforms for which the latest version of C<cmake>
@@ -154,7 +154,7 @@ you have some options:
 
 =item Install system version of C<cmake>
 
-If you can find an older version better than 3.0.0 that is supported by your operating
+If you can find an older version of C<cmake> 3.x.x that is supported by your operating
 system.
 
 =item Force a source code install

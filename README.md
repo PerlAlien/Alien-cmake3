@@ -1,6 +1,6 @@
 # Alien::cmake3 ![static](https://github.com/PerlAlien/Alien-cmake3/workflows/static/badge.svg) ![linux](https://github.com/PerlAlien/Alien-cmake3/workflows/linux/badge.svg) ![windows](https://github.com/PerlAlien/Alien-cmake3/workflows/windows/badge.svg) ![macos](https://github.com/PerlAlien/Alien-cmake3/workflows/macos/badge.svg)
 
-Find or download or build cmake 3 or better
+Find or download or build cmake 3
 
 # SYNOPSIS
 
@@ -34,7 +34,7 @@ share {
 # DESCRIPTION
 
 This [Alien](https://metacpan.org/pod/Alien) distribution provides an external dependency on the build tool `cmake`
-version 3.0.0 or better.  `cmake` is a popular alternative to autoconf.
+version 3.x.x.  `cmake` is a popular alternative to autoconf.
 
 # METHODS
 
@@ -80,7 +80,7 @@ The name of the `cmake` executable.
 
         It integrates better with [Alien](https://metacpan.org/pod/Alien)s that are based on that technology.
 
-    - [Alien::cmake3](https://metacpan.org/pod/Alien::cmake3) will provide version 3.0.0 or better
+    - [Alien::cmake3](https://metacpan.org/pod/Alien::cmake3) will provide version 3.x.x
 
         [Alien::CMake](https://metacpan.org/pod/Alien::CMake) will provide 2.x.x on some platforms where more recent binaries are not available.
 
@@ -106,7 +106,7 @@ The name of the `cmake` executable.
 
 # CAVEATS
 
-If you do not have a system `cmake` of at least 3.0.0 available, then a share install
+If you do not have a system `cmake` version 3.x.x available, then a share install
 will be attempted.
 
 Binary share installs are attempted on platforms for which the latest version of `cmake`
@@ -122,7 +122,7 @@ you have some options:
 
 - Install system version of `cmake`
 
-    If you can find an older version better than 3.0.0 that is supported by your operating
+    If you can find an older version of `cmake` 3.x.x that is supported by your operating
     system.
 
 - Force a source code install
@@ -142,9 +142,11 @@ Contributors:
 
 Adriano Ferreira (FERREIRA)
 
+Dagfinn Ilmari Mannsåker (ilmari)
+
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2017 by Graham Ollis.
+This software is copyright (c) 2017-2024 by Graham Ollis.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

@@ -19,6 +19,9 @@ pod_spelling_system:
     - Manns
     - ilmari
     - ker
+    - Mannsåker
+    - flavours
+    - org
 
 pod_coverage:
   skip: 0

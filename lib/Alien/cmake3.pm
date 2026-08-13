@@ -108,9 +108,6 @@ sub alien_helper
 {
   return {
     cmake3 => sub {
-      # return the executable name for GNU make,
-      # usually either make or gmake depending on
-      # the platform and environment
       Alien::cmake3->exe;
     },
   }
